@@ -1,0 +1,7 @@
+<h4> <%= @employee.first_name %></h4>
+<h4> <%= @employee.last_name %></h4>
+<p> <%= @employee.birthdate %></p>
+ <% @employee.addresses.each do |add| %>
+	<p><%= add.city %></p>
+	<p><%= add.zip %></p>
+	<% end %>
